@@ -363,7 +363,7 @@ def check_update():
     else:
         if VERSION != version_now:
             showwarning("SC警告",f"版本不匹配,可能是有新的版本发布,当前最新版本为{version_now}\n请前往(https://github.com/funnywzh/Security-Component/releases)下载")
-            yes_or_no = askyesno("SC提示",f"是否前往跟新网页？")
+            yes_or_no = askyesno("SC提示",f"是否前往更新网页？")
             if yes_or_no == True:
                 webbrowser.open("https://github.com/funnywzh/Security-Component/releases") #打开更新网页
             else:
